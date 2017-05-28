@@ -1,0 +1,572 @@
+/*******************
+color: #ec7e22;
+*******************/
+
+
+
+/****************************************
+ BASIC STYLING
+*******************************************/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, 
+body {
+
+		background-color: #fff;
+		color: #555;
+		font-family: 'Lato', 'Arial', 'sans-serif';
+		font-weight: 300;
+		font-size: 20px;
+		text-rendering: optimizeLegibility;
+		overflow-x: hidden;
+
+}
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/****************************************************
+    REUSEABLE COMPONENT
+***************************************************/
+
+
+.row {
+
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+section {
+
+	padding: 80px 0;
+}
+
+.my-foto {
+	width: 250px;
+	height: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border-radius: 50%;
+	border: 2px solid #ec7e22;
+	margin-bottom: 20px;
+}
+
+/**********************************
+ heading section
+*********************************/
+
+
+
+h1,
+h2,
+h3 {
+  
+  font-weight: 300;
+  text-transform: uppercase;
+  
+ 
+
+}
+
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+
+h2 {
+  
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+
+
+h2:after {
+
+	display: block;
+	height: 2px;
+	background-color: #ec7e22;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+h3 {
+
+	font-size: 110%;
+	margin-bottom: 14px;
+}
+ 
+
+ /*******************
+ paragraphy
+ ********************/
+
+
+ .long-text {
+
+ 	line-height: 145%;
+ 	width: 70%;
+ 	margin-left: 15%;
+ }
+
+ .box p {
+
+ 	font-size: 90%;
+ 	line-height: 145%
+ } 
+/*****************************
+  icons
+****************************/
+
+ .icon-big {
+
+ 		font-size: 300%;
+ 		display: block;
+ 		color: #ec7e22;
+ 		margin-bottom: 10px;
+
+ } 
+
+
+
+ .para {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+
+/******************************************
+ button section
+******************************************/
+
+.btn-big:link,
+.btn-big:visited {
+
+     padding: 10px 30px;
+	 font-weight: 300;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 border-radius: 200px;
+	 border: 1px solid #ec7e22;
+	 color: #fff;
+     -webkit-transition: background-color 1s, border 1s, color 1s;
+     transition: background-color 1s, border 1s, color 1s;
+}  
+
+.btn-big:active,
+.btn-big:hover {
+	border: 1px solid #cf6d17;
+	background-color: #ec7e22;
+}
+
+/***************************************
+  header section
+****************************************/
+
+
+header {
+
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+
+.hero-head {
+    
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+/**********
+.main-head {
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+*************/
+
+.logo {
+
+	width: 100px;
+	float: left;
+	margin-top: 20px;
+	border-radius: 50%;
+	height: 100px;
+	border: 2px solid #ec7e22;
+
+
+}
+
+.logo-black {
+ 	display: none; 
+ 	width: auto;
+ 	height: 50px;
+ 	float: left;
+ 	border-radius: 50%;
+ 	border: 2px solid #ec7e22;
+ 	margin: 5px 0;
+}
+
+
+/**************************
+main-nav
+************************/
+
+.main-nav {
+
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+
+.main-nav li {
+
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	-webkit-transition: border-bottom 0.2s;
+	transition: border-bottom 0.2s;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active {
+     
+     border-bottom: 2px solid #e67e22;
+}
+
+
+
+/**************************
+ mobile-nav
+*******************************/
+
+.mobile-nav-icon {
+
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+
+.mobile-nav-icon i {
+
+	font-size: 200%;
+	color: #fff;
+}
+
+
+
+/********************************
+ sticky-nav
+**********************************/
+
+.sticky {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #2c3e50;
+	/**background-color: rgba(255, 255, 255, 0.98); **/
+	box-shadow: 0 2px 2px #efefef;
+	z-index: 9999;
+}
+
+
+.sticky .main-nav { margin-top: 18px; }
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	padding: 16px 0;
+	color: #5;
+	
+}
+
+
+.sticky .logo { display: none; }
+
+.sticky .logo-black { display: block; }
+
+
+
+ /***********************************
+  about section
+ ****************************/ 
+
+
+.about-section .long-text {
+
+	    margin-bottom: 30px;
+}
+
+
+/********************************
+portfolio section
+******************************/
+
+
+.portfolio {
+   
+	padding: 0;
+    
+}
+
+.portfolio-images {
+
+	list-style: none;
+	width: 100%;
+
+}
+
+.portfolio-images li {
+
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.portfolio-foto {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: #000;
+
+}
+
+
+.portfolio-foto img {
+    
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+
+
+}
+
+
+
+
+.portfolio-foto img:hover {
+        
+        opacity: 1;
+	    cursor: crosshair;
+	    transform: scale(1.03);
+}
+
+
+
+
+/*************************
+ testimonial section
+******************************/
+/****
+
+.section-testimonial {
+ 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/background.jpg");
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+
+}
+ 
+ ****/
+
+.section-testimonial {
+
+	background-color: #ecf0f1;
+}
+
+
+
+blockquote {
+
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	position: relative;
+	margin-top: 40px;
+
+}
+
+
+blockquote:before {
+
+	content: "\201C";
+	font-size: 500%;
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	color: #ec7e22;
+}
+
+
+cite {
+
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+
+cite img {
+	width: auto;
+	height: 80px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+
+
+/***************
+contact-form section
+***************************/
+
+.contact-info {
+ 
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/background-image.jpg");
+ 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/background-image.jpg");
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+
+}
+
+
+
+input[type=text],
+input[type=email],
+textarea {
+
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ec7e22;
+}
+
+
+input[type=submit] {
+	
+     padding: 10px 30px;
+	 font-weight: 300;
+	 margin-top: 15px;
+	 text-transform: uppercase;
+	 border-radius: 200px;
+	 border: 1px solid #ec7e22;
+	 color: #000;
+     -webkit-transition: background-color 1s, border 1s, color 1s;
+     transition: background-color 1s, border 1s, color 1s;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+
+	background-color: #cf6d17;
+
+}
+
+*:focus {outline: none;}
+
+
+
+
+.social {
+	
+	margin: 0 5px;
+  	border-radius: 50%;
+  	padding: 5px;
+}
+
+
+
+
+
+/*************************
+footer section
+***********************/
+
+.footer-section {
+
+     text-align: center;
+     color: #000;
+     padding: 30px; 
+     background-color: #ecf0f1;
+}
+
+.footer-social li {
+
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+	font-size: 180%;
+	color: #000;
+}
+
+
+
+
+.ion-social-twitter:hover {color: #55acee;}
+
+
+.ion-social-facebook:hover {color: #3b5999;}
+
+
+.ion-social-linkedin:hover {color: #0077B5;}
+
+.ion-email:hover { color: #410093; }
+
+
